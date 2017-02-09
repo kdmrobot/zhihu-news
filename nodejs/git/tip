@@ -4,3 +4,7 @@
  $ git push origin master //推送到项目 git push [远程仓库名] [分支名]
  $ git config --global core.editor emacs //设置编辑器
  $ git config --list //检查你的设置
+
+·  git add -A  提交所有变化
+·  git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+·  git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
