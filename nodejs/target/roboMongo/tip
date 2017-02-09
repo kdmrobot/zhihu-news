@@ -1,0 +1,3 @@
+MongoDB Windows环境安装及配置 http://www.cnblogs.com/lzrabbit/p/3682510.html
+
+启动服务 net start Mongodb

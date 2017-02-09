@@ -1,0 +1,7 @@
+1. 前台展现页面
+    html+css
+2 路由
+    express
+3数据来源和存储
+    爬取 nodejs
+    api操作数据库 mongodb
