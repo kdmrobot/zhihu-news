@@ -1,0 +1,8 @@
+http://blog.csdn.net/wzzvictory/article/details/9015155//查看数字签名和数字证书
+hash rsa算法
+客户端 随机数加token加时间戳进行md5签名 把签名和随机数 时间戳一起传给服务器 ——》服务器有token +获取的随机和时间 算md5 看是否相等
+https://www.ibm.com/developerworks/cn/web/1102_niugang_csrf/
+
+
+
+
