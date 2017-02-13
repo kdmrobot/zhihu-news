@@ -1,0 +1,28 @@
+{
+  "name": "hhqtest Spider",
+  "version": "1.0.0",
+  "description": "hhqtest spider ",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.5.0",
+    "cheerio": "^0.19.0",
+    "eventproxy": "^0.3.4",
+    "mongodb": "^2.2.22",
+    "superagent": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "kdmrobot",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/kdmrobot"
+}

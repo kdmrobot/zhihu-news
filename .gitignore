@@ -1,2 +1,4 @@
 .idea/
 node_modules/
+*-compiled.js
+*-compiled.js.map
