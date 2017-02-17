@@ -1,0 +1,1 @@
+node debug v8debug is not defined 点击Run/Debug configurations  ->configuration->Node parameters: --expose_debug_as=v8debug

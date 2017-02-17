@@ -1,6 +1,8 @@
 清除缓存 $ git rm -r --cached .
-
+remote命名 链接
  $ git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github项目
+ $ git  pull css-learning master  //拉取指定名称的 分支名 代码
+
  $ git push origin master //推送到项目 git push [远程仓库名] [分支名]
  $ git config --global core.editor emacs //设置编辑器
  $ git config --list //检查你的设置

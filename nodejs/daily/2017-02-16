@@ -1,0 +1,4 @@
+1 熟悉 eventProxy https://github.com/JacksonTian/eventproxy 主要是异步回调 和异常处理的场景
+2 async   http://www.ruanyifeng.com/blog/2015/05/async.html 流程控制工具包 （学习）
+nodejs debug 1：node-inspector 先起服务 node-inspectpor  然后打开新的控制台 node target.js
+             2: webstrom debug  //有的要设置参数  run   edit configuration parameter --expose_debug_as=v8debug

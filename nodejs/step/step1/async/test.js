@@ -1,0 +1,1 @@
+console.log(nativeMax(1,0));
