@@ -1,0 +1,36 @@
+{
+  "name": "learning",
+  "version": "2.1.2",
+  "description": "state management for Vue.js",
+  "main": "dist/vuex.js",
+  "scripts": {
+    "dev": "node examples/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/vuex.git"
+  },
+  "author": "Evan You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuejs/vuex/issues"
+  },
+  "homepage": "https://github.com/vuejs/vuex#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "connect-history-api-fallback": "^1.3.0",
+    "css-loader": "^0.26.1",
+    "express": "^4.14.1",
+    "vue": "^2.1.10",
+    "vue-loader": "^10.3.0",
+    "vue-router": "^2.3.0",
+    "vue-template-compiler": "^2.1.10",
+    "vuex": "^2.1.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1"
+  }
+}
