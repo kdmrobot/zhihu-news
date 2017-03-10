@@ -1,0 +1,7 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "harmon": "^1.3.2",
+    "http-proxy": "^1.16.2"
+  }
+}

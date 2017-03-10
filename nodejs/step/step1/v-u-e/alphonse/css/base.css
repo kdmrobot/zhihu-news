@@ -1,0 +1,732 @@
+/* Reset */
+
+/*------------------------------------------------------*/
+
+/*  
+	* 默认设计宽度为640, 设置 html font-size:20px;
+	* 当前 html font-size = 当前设备宽/16 
+*/
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+header,
+menu,
+section,
+p,
+input,
+section,
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+textarea,
+select,
+input,
+button {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  color: #333;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color:  rgba(0,0,0,0);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+em,
+i,
+b {
+  font-style: normal;
+  text-align: left;
+}
+
+html,
+body,
+img {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+input,
+textarea,
+button,
+a[hidefocus] {
+  outline: none;
+}
+
+button {
+  -webkit-user-select: none;
+}
+
+li,
+s {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 去掉输入框点中时的透明块 */
+
+a,
+a * {
+  cursor: pointer;
+}
+
+a,
+img {
+  -webkit-touch-callout: none;
+}
+
+/* 禁止长按链接与图片弹出菜单 */
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+/* Grid */
+
+/* Function */
+
+/*------------------------------------------------------*/
+
+.f-cb:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.f-ib {
+  display: inline-block;
+}
+
+.f-tdu {
+  text-decoration: underline;
+}
+
+.f-tdl {
+  text-decoration: line-through;
+}
+
+.f-pr {
+  position: relative;
+}
+
+.f-pa {
+  position: absolute !important;
+}
+
+.f-fl {
+  float: left;
+}
+
+.f-fr {
+  float: right;
+}
+
+.f-cp {
+  cursor: pointer;
+}
+
+.f-dft {
+  cursor: default;
+}
+
+.f-inner {
+  display: inline-block;
+  width: 100%;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.f-blk,
+.f-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.f-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.f-img {
+  display: block;
+  width: 100%;
+}
+
+.f-ovh {
+  overflow: hidden;
+}
+
+.f-mg {
+  margin: 0 10px;
+}
+
+.f-mgt5 {
+  margin-top: 5px;
+}
+
+.f-mgt10 {
+  margin-top: 10px;
+}
+
+.f-mgt12 {
+  margin-top: 12px!important;
+}
+
+.f-mgt15 {
+  margin-top: 15px;
+}
+
+.f-mgt20 {
+  margin-top: 20px;
+}
+
+.f-mgl0 {
+  margin-left: 0px!important;
+}
+
+.f-mgl10 {
+  margin-left: 10px;
+}
+
+.f-mgb10 {
+  margin-bottom: 10px;
+}
+
+.f-pdl0 {
+  padding-left: 0px!important;
+}
+
+.f-aftbt0:after {
+  border-bottom: none;
+}
+
+.f-brk {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.f-thide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.f-thide2 {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.f-tid {
+  text-indent: -9999px;
+}
+
+.f-tc {
+  text-align: center;
+}
+
+.f-vam,
+.f-vama * {
+  vertical-align: middle;
+}
+
+a,
+a:hover,
+.f-dislight {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.f-vc {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* 块元素垂直居中 */
+
+.f-cc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 绝对居中 */
+
+.z-hide,
+.f-hide {
+  display: none !important;
+}
+
+.z-show {
+  display: block !important;
+}
+
+.z-vhide {
+  visibility: hidden !important;
+}
+
+.f-fs0,
+.f-fs10 {
+  font-size: 10px;
+}
+
+.f-fs1,
+.f-fs11 {
+  font-size: 11px;
+}
+
+.f-fs2,
+.f-fs12 {
+  font-size: 12px;
+}
+
+.f-fs3,
+.f-fs13 {
+  font-size: 13px;
+}
+
+.f-fs4,
+.f-fs14 {
+  font-size: 14px;
+}
+
+.f-fs5,
+.f-fs15 {
+  font-size: 15px;
+}
+
+.f-fs6,
+.f-fs16 {
+  font-size: 16px;
+}
+
+.f-fs7,
+.f-fs17 {
+  font-size: 17px;
+}
+
+.f-fs8,
+.f-fs18 {
+  font-size: 18px;
+}
+
+.f-fs9,
+.f-fs19 {
+  font-size: 19px;
+}
+
+.f-fs9 {
+  font-size: 9px;
+}
+
+.f-fs10 {
+  font-size: 10px;
+}
+
+.f-fs11 {
+  font-size: 11px;
+}
+
+.f-fs12 {
+  font-size: 12px;
+}
+
+.f-fs13 {
+  font-size: 13px;
+}
+
+.f-fs14 {
+  font-size: 14px;
+}
+
+.f-fs15 {
+  font-size: 15px;
+}
+
+.f-fs16 {
+  font-size: 16px;
+}
+
+.f-fs17 {
+  font-size: 17px;
+}
+
+.f-fs18 {
+  font-size: 18px;
+}
+
+.f-fs19 {
+  font-size: 19px;
+}
+
+.f-fs20 {
+  font-size: 20px;
+}
+
+.f-fs21 {
+  font-size: 21px;
+}
+
+.f-fs30 {
+  font-size: 30px;
+}
+
+.f-ff0 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.f-ff1 {
+  font-family: simsun,\5b8b\4f53;
+}
+
+/* 宋体 */
+
+.f-fw0 {
+  font-weight: normal;
+}
+
+.f-fw1 {
+  font-weight: bold;
+}
+
+/* Broswers Compatible */
+
+/*------------------------------------------------------*/
+
+/* FontColors & BackgroundColors & Borders */
+
+/*------------------------------------------------------*/
+
+.s-fc0 {
+  color: #000;
+}
+
+.s-fc1 {
+  color: #333;
+}
+
+.s-fc2 {
+  color: #328ad4;
+}
+
+.s-fc2:active,
+.s-fc2.z-active {
+  color: #256fae;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* 链接色 */
+
+.s-fc3 {
+  color: #666;
+}
+
+.s-fc4 {
+  color: #888;
+}
+
+.s-fc5 {
+  color: #999;
+}
+
+.s-fc6,
+.s-fcTheme {
+  color: #d33a31;
+}
+
+/* 积分红字，支出 #d33a13 */
+
+.s-fc7 {
+  color: #42a455;
+}
+
+/* 收入 */
+
+.s-fc8 {
+  color: #fff;
+}
+
+.s-fc9 {
+  color: #fae607;
+}
+
+/* 邀请 yellow */
+
+.s-fc10 {
+  color: #fe672e;
+}
+
+/* 会员橙字 fe672e */
+
+.s-fc11 {
+  color: #c2c2c2;
+}
+
+.s-fc12 {
+  color: #bbb;
+}
+
+/* light gray */
+
+.s-fc13 {
+  color: #aaa;
+}
+
+.s-bgc0 {
+  background-color: #f6f7f8;
+}
+
+/* 有卡片-16.11.30 改 原来#f1f2f3 */
+
+.s-bgc1 {
+  background-color: #fcfdfe;
+}
+
+/* 无卡片-16.11.30 改 原来#f8f8f8 */
+
+.s-bgc2 {
+  background-color: #f8faff;
+}
+
+/* 邀请页 */
+
+.s-bgc3,
+.s-bgcFFF {
+  background-color: #fff;
+}
+
+.link {
+  color: #d33a31;
+}
+
+.link:hover {
+  color: #f55c53;
+}
+
+/* #d8d8d8 */
+
+.s-brdt1 {
+  background: url(../img/line_1t.png) repeat-x left top;
+  background-size: 1px 1px;
+}
+
+/* top */
+
+.s-brdb1 {
+  background: url(../img/line_1.png) repeat-x left bottom;
+  background-size: 1px 1px;
+}
+
+/* bottom */
+
+.s-brdl1 {
+  background: url(../img/line_1l.png) repeat-y left top;
+  background-size: 1px 1px;
+}
+
+/* left */
+
+.s-brdf1 {
+  background: url(../img/line_1t.png) repeat-x left top, url(../img/line_1.png) repeat-x left bottom;
+  background-size: 1px 1px;
+}
+
+/* top and bottom */
+
+.s-brdtl1 {
+  background: url(../img/line_1t.png) repeat-x left top, url(../img/line_1l.png) repeat-y left top;
+  background-size: 1px 1px;
+}
+
+/* top and left */
+
+/* #bebebe */
+
+.s-brdb2 {
+  background: url(../img/line_2.png) repeat-x left bottom;
+  background-size: 1px 1px;
+}
+
+/* bottom */
+
+/* 与module.less中命名冲突，因此用f-bd2 */
+
+.f-bd2,
+.u-txt,
+.u-area {
+  position: relative;
+}
+
+.f-bd2 *,
+.u-txt *,
+.u-area * {
+  position: relative;
+  z-index: 2;
+}
+
+.f-bd2 .f-link {
+  position: absolute;
+}
+
+.f-bd2:after,
+.u-txt:after,
+.u-area:after {
+  position: absolute;
+  z-index: 10;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.f-bd2 .f-link {
+  position: absolute;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .f-bd2:after {
+    width: 300%;
+    height: 300%;
+    -webkit-transform: scale(0.33);
+    transform: scale(0.33);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .g-web .mainctn {
+    width: 600px;
+    min-width: 600px;
+    min-height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .s-brdt1 {
+    background-image: url(../img/line_1t_3x.png);
+  }
+
+  /* top */
+
+  .s-brdb1 {
+    background-image: url(../img/line_1_3x.png);
+  }
+
+  /* bottom */
+
+  .s-brdl1 {
+    background-image: url(../img/line_1l_3x.png);
+  }
+
+  /* left */
+
+  .s-brdf1 {
+    background: url(../img/line_1t_3x.png) repeat-x left top, url(../img/line_1_3x.png) repeat-x left bottom;
+    background-size: 1px 1px;
+  }
+
+  /* top and bottom */
+
+  .s-brdtl1 {
+    background: url(../img/line_1t_3x.png) repeat-x left top, url(../img/line_1l_3x.png) repeat-y left top;
+    background-size: 1px 1px;
+  }
+
+  /* top and left */
+
+  /* #bebebe */
+
+  .s-brdb2 {
+    background-image: url(../img/line_2_3x.png);
+  }
+
+  /* bottom */
+
+  .f-bd2:after,
+  .u-txt:after,
+  .u-area:after {
+    width: 300%;
+    height: 300%;
+    -webkit-transform: scale(0.3333333);
+    transform: scale(0.3333333);
+  }
+}

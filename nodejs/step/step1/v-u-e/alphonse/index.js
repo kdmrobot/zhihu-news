@@ -3,7 +3,7 @@
  */
 import 'babel-polyfill'
 import Vue from 'vue'
-import store from './component/store'
+import store from './store/store'
 import router from './route/routes'
 
 new Vue({
@@ -11,14 +11,36 @@ new Vue({
     store,
     router,
     template: `
-    <div id="app">
+     <div id="app">
       <h1>Active Links</h1>
-      <!--<ul>
-       <li><router-link to="/">/index</router-link></li>
-        <li><router-link to="/country">/country</router-link></li>
-        <li><router-link to="/test" >/test</router-link></li>    
-      </ul>-->
-       <router-view class="view"></router-view>
+      <ul>
+        <li><router-link to="/">/</router-link></li>
+        <li><router-link to="/" exact>/ (exact match)</router-link></li>
+        <li><router-link to="/users">/users</router-link></li>
+        <li><router-link to="/users" exact>/users (exact match)</router-link></li>
+        <li><router-link to="/users/evan">/users/evan</router-link></li>
+        <li><router-link to="/users/evan#foo">/users/evan#foo</router-link></li>
+        <li>
+          <router-link :to="{ path: '/users/evan', query: { foo: 'bar' }}">
+            /users/evan?foo=bar
+          </router-link>
+        </li>
+        <li><!-- #635 -->
+          <router-link :to="{ name: 'user', params: { username: 'evan' }, query: { foo: 'bar' }}" exact>
+            /users/evan?foo=bar (named view + exact match)
+          </router-link>
+        </li>
+        <li>
+          <router-link :to="{ path: '/users/evan', query: { foo: 'bar', baz: 'qux' }}">
+            /users/evan?foo=bar&baz=qux
+          </router-link>
+        </li>
+        <li><router-link to="/about">/about</router-link></li>
+        <router-link tag="li" to="/about">
+          <a>/about (active class on outer element)</a>
+        </router-link>
+      </ul>
+      <router-view class="view"></router-view>
     </div>
   `
 })
